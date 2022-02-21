@@ -1,0 +1,23 @@
+@media only screen and (max-width: 37.5rem) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin: 2.2rem;
+  }
+
+  section.card-body {
+    grid-row: 2 / 10;
+    grid-column: 1 / -1;
+  }
+}
+
+@media only screen and (min-width: 60rem) {
+  main {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  section.card-body {
+    grid-row: 2 / -2;
+    grid-column: 4 / span 2;
+  }
+}

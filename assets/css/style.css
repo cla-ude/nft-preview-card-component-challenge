@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  main {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+    margin: 2.2rem;
+  }
+  section.card-body {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 8;
+    grid-row: 2 / 10;
+    grid-column: 1 / -1;
+  }
+}
+
+@media only screen and (min-width: 60rem) {
+  main {
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+  }
+  section.card-body {
+    grid-row: 2 / -2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-column: 4 / span 2;
+  }
+}
+
+body {
+  background: #0d192b;
+  min-height: 100%;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+section.card-body {
+  background: #14253d;
+  padding: 2.2rem;
+  border-radius: 1.6rem;
+}
+
+section.card-body img.featured-image {
+  max-width: 100%;
+  border-radius: 1.6rem;
+}
+
+section.card-body h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 2rem;
+}
+
+section.card-body p {
+  font-size: 1.8rem;
+  color: #8bacda;
+}
+
+section.card-body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.2rem 0;
+}
+
+section.card-body .container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-column-gap: 0.65rem;
+          column-gap: 0.65rem;
+}
+
+section.card-body .container .wrapper.one p {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+section.card-body .container .wrapper.two {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.card-body .author-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  padding-top: 1.2rem;
+}
+
+section.card-body .author-wrapper img {
+  width: 3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+section.card-body .author-wrapper p {
+  font-size: 1.6rem;
+}
+
+section.card-body .author-wrapper span.author {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
