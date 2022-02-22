@@ -27,9 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<div align="center">
 ![Mobile View](./screenshot-mobile.jpg)
-</div>
 
 ![Desktop View](./screenshot-desktop.jpg)
 
