@@ -1,12 +1,13 @@
 $primary_colors: (
   soft_blue: hsl(215, 51%, 70%),
   cyan_color: hsl(178, 100%, 50%),
+  cyan_color_v2: hsla(178, 100%, 50%, 0.55),
 );
 
 $background_colors: (
   main_bg: hsl(217, 54%, 11%),
   card_bg: hsl(216, 50%, 16%),
-  line: hsl(215, 32%, 27%),
+  line_color: hsl(215, 32%, 27%),
   white_color: hsl(0, 0%, 100%),
 );
 

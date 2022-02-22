@@ -11,7 +11,7 @@ html {
   font-family: "Outfit", sans-serif;
 }
 
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 60rem) {
   main {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -27,7 +27,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 72rem) {
   main {
     -ms-grid-columns: (1fr)[8];
         grid-template-columns: repeat(8, 1fr);
@@ -59,9 +59,46 @@ section.card-body {
   border-radius: 1.6rem;
 }
 
-section.card-body img.featured-image {
+section.card-body .featured-container {
+  position: relative;
   max-width: 100%;
-  border-radius: 1.6rem;
+  cursor: pointer;
+}
+
+section.card-body .featured-container .view {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  min-height: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.2rem;
+  -webkit-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+section.card-body .featured-container .view:hover {
+  opacity: 1;
+  background-color: rgba(0, 255, 247, 0.55);
+}
+
+section.card-body .featured-container img.featured-image {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+  border-radius: 1.2rem;
 }
 
 section.card-body h1 {
@@ -69,11 +106,18 @@ section.card-body h1 {
   font-weight: 600;
   color: white;
   margin-top: 2rem;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+
+section.card-body h1:hover {
+  color: #00fff7;
 }
 
 section.card-body p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #8bacda;
+  text-align: left;
 }
 
 section.card-body .container {
@@ -83,7 +127,7 @@ section.card-body .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1.2rem 0;
+  margin: 0.5rem 0;
 }
 
 section.card-body .container .wrapper {
@@ -106,6 +150,10 @@ section.card-body .container .wrapper.two {
           justify-content: flex-end;
 }
 
+section.card-body hr.line {
+  color: #2f415b;
+}
+
 section.card-body .author-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,9 +174,35 @@ section.card-body .author-wrapper img {
 
 section.card-body .author-wrapper p {
   font-size: 1.6rem;
+  font-weight: 300;
 }
 
 section.card-body .author-wrapper span.author {
   color: white;
+}
+
+section.card-body .author-wrapper span.author:hover {
+  color: #00fff7;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+footer p {
+  color: white;
+  font-size: 1.4rem;
+}
+
+footer a {
+  color: #00fff7;
 }
 /*# sourceMappingURL=style.css.map */
