@@ -27,9 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](./screenshot-desktop.jpg)
-
+<div align="center">
 ![Mobile View](./screenshot-mobile.jpg)
+</div>
+
+![Desktop View](./screenshot-desktop.jpg)
 
 ### Links
 
